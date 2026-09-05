@@ -3,17 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	var product string = "Tempered Glass 10mm"
-	var quantity int8 = 3
-	var unitPrice float32 = 1250.50
-	var discount float32 = 10.00
-	var tax float32 = 16.00
+	product := "Tempered Glass 10mm"
+	quantity := 3
+	unitPrice := 1250.50
+	discount := 10.00
+	tax := 16.00
 
-	var subtotal float32 = float32(quantity) * unitPrice
-	var discountAmount float32 = subtotal * discount / 100
-	var subtotalAfterDiscount float32 = subtotal - discountAmount
-	var taxAmount float32 = subtotalAfterDiscount * tax / 100
-	var finalTotal float32 = subtotalAfterDiscount + taxAmount
+	subtotal := float64(quantity) * unitPrice
+	discountAmount := subtotal * discount / 100
+	subtotalAfterDiscount := subtotal - discountAmount
+	taxAmount := subtotalAfterDiscount * tax / 100
+	finalTotal := subtotalAfterDiscount + taxAmount
 
 	fmt.Println("Product: ", product)
 	fmt.Println("Quantity: ", quantity)
