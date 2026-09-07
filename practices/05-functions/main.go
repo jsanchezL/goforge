@@ -42,7 +42,7 @@ func main() {
 	fmt.Println("Product:", product)
 	fmt.Println("Quantity:", quantity)
 	fmt.Printf("Unit price: $%.2f\n", unitPrice)
-	fmt.Println("")
+	fmt.Println()
 	fmt.Printf("Subtotal: $%.2f\n", subtotal)
 	fmt.Printf("Discount rate: %.0f%%\n", discountRate)
 	fmt.Printf("Discount amount: $%.2f\n", discountAmount)
